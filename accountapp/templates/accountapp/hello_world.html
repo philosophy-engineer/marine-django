@@ -2,9 +2,15 @@
 
 
 {% block content %}
-<div style="height: 20rem; background-color: #38df81; border-radius: 1rem;; margin: 2rem;" >
-    <h1>
-        Testing
-    </h1>   
+<div style="margin: 2rem; text-align: center;" >
+    <h1 class="marine_django_font">
+        Hello World LIST!
+    </h1>
+    <form action="/account/hello-world/" method="post">
+        {% csrf_token %}
+        <div>
+            <input type="text" name="hello_world_input">
+        </div>
+    </form>
 </div>
 {% endblock %}

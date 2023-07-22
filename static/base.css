@@ -1,0 +1,29 @@
+.marine_django_font {
+    font-family: 'Acme', sans-serif;
+}
+
+.maring_django_header_layer {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.maring_django_footer_layer {
+    text-align: center; 
+    margin-top: 2rem;
+}
+
+.marine_django_footer_button_layer {
+    font-size: .6rem;
+}
+
+.marine_django_footer_logo_layer {
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
