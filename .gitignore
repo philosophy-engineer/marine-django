@@ -83,3 +83,4 @@ fabric.properties
 db.sqlite3
 goorm.manifest
 __pycache__/
+migrations/

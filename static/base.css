@@ -13,17 +13,15 @@
 }
 
 .marine_django_footer_button_layer {
-    font-size: .6rem;
+    font-size: .9rem;
 }
 
 .marine_django_footer_logo_layer {
     margin-top: 1rem;
 }
 
-
-
-
-
-
-
-
+.marine_django_500px_div {
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 500px;
+}
