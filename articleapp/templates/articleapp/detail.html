@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="marine_django_500px_div">
+    <div style="...">
+        <h1>
+           {{ target_article.title }}
+        </h1>
+        <img src="{{ target_article.image.url }}" alt="">
+        <p>
+            {{ target_article.content }}
+        </p>
+        <a href="{% url 'articleapp:update' pk=target_article.pk %}">
+            Update Article
+        </a>
+        <a href="{% url 'articleapp:delete' pk=target_article.pk %}">
+            Delete Article
+        </a>
+    </div>
+</div>
+{% endblock %}
