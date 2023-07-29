@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="marine_django_500px_div">
+    <div style="text-align: center; max-width: 700px; margin: 4rem auto;">
+        <img style="width: 100%; border-radius: 1rem; margin: 2rem 0;" src="{{ target_project.image.url }}" alt="">
+        <h1>{{ target_project.title }}</h1>
+        <h5>{{ target_project.description }}</h5>
+        <hr>
+    </div>
+</div>
+{% endblock %}
