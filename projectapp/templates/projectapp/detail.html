@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="marine_django_500px_div">
+<div>
     <div style="text-align: center; max-width: 700px; margin: 4rem auto;">
         <img style="height: 12rem; width: 12rem; border-radius: 20rem; margin-bottom: 2rem; object-fit: cover;" src="{{ target_project.image.url }}" alt="">
         <h1>
@@ -10,6 +10,11 @@
         <h5>
             {{ target_project.description }}
         </h5>
+    </div>
+    <div>
+
+        {% include 'snippets/list_fragment.html' with article_list=object_list %}
+        
     </div>
 </div>
 {% endblock %}
