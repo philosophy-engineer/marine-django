@@ -1,3 +1,21 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+
+}
+
+.marine_django_header_navbar {
+    margin: 1rem 0;
+}
+
+.marine_django_header_nav {
+    margin: 0 0.5rem;
+}
+
 .marine_django_font {
     font-family: 'Acme', sans-serif;
 }

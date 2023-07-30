@@ -2,7 +2,7 @@ from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
 from django.views.generic import CreateView, DetailView, ListView
 from django.urls import reverse
-from .views import Project
+from .models import Project
 from .forms import ProjectCreationForm
 # Create your views here.
 
@@ -28,6 +28,6 @@ class ProjectListView(ListView):
     model = Project
     context_object_name = 'project_list'
     template_name = 'projectapp/list.html'
-    paginate_by = 100
+    paginate_by = 25
     
     

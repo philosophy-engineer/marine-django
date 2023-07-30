@@ -4,27 +4,27 @@
             Marine-Django
         </h1> 
     </div>
-    <div>
-        <a href="{% url 'articleapp:list' %}">
+    <div class='marine_djagno_header_navbar'>
+        <a class='marine_django_header_nav' href="{% url 'articleapp:list' %}">
             <span>Articles</span>
         </a>
-        <a href="{% url 'projectapp:list' %}">
+        <a class='marine_django_header_nav' href="{% url 'projectapp:list' %}">
             <span>Projects</span>
         </a>
         {% if not user.is_authenticated %}
-        <!-- <a href="{% url 'accountapp:login' %}?next={{ request.path }}"> -->
-        <a href="{% url 'accountapp:login' %}">
+        <!-- <a class='marine_django_header_nav' href="{% url 'accountapp:login' %}?next={{ request.path }}"> -->
+        <a class='marine_django_header_nav' href="{% url 'accountapp:login' %}">
             <span>Login</span>
         </a>
-        <a href="{% url 'accountapp:create' %}">
+        <a class='marine_django_header_nav' href="{% url 'accountapp:create' %}">
             <span>SignUp</span>
         </a>
         {% else %}
-        <a href="{% url 'accountapp:detail' pk=user.pk %}">
+        <a class='marine_django_header_nav' href="{% url 'accountapp:detail' pk=user.pk %}">
             <span>MyPage</span>
         </a>
-        <!-- <a href="{% url 'accountapp:logout' %}?next={{ request.path }}"> -->
-        <a href="{% url 'accountapp:logout' %}">
+        <!-- <a class='marine_django_header_nav' href="{% url 'accountapp:logout' %}?next={{ request.path }}"> -->
+        <a class='marine_django_header_nav' href="{% url 'accountapp:logout' %}">
             <span>Logout</span>
         </a>
         {% endif %}
