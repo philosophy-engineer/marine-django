@@ -20,6 +20,9 @@
             <span>SignUp</span>
         </a>
         {% else %}
+        <a class='marine_django_header_nav' href="{% url 'subscriptionapp:list' %}">
+            <span>Subscriptions</span>
+        </a>
         <a class='marine_django_header_nav' href="{% url 'accountapp:detail' pk=user.pk %}">
             <span>MyPage</span>
         </a>
